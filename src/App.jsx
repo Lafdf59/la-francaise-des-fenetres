@@ -59,7 +59,7 @@ export default function LandingPage() {
 
     const formData = new FormData(event.currentTarget);
     const payload = {
-      access_key: WEB3FORMS_ACCESS_KEY,
+      access_key:03dd7b28-8a9f-4b91-af2a-7d064c23a69b,
       subject: "Nouvelle demande de devis - La Française des Fenêtres",
       from_name: "Landing Page La FDF",
       ...Object.fromEntries(formData),
