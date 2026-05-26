@@ -381,4 +381,4 @@ export default function LandingPage() {
   );
 }
 
-createRoot(document.getElementById("root")).render(<LandingPage />);
+createRoot(document.getElementById("root")).render(<App />);
