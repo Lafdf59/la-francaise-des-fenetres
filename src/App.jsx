@@ -26,7 +26,28 @@ const EMAIL_LINK = `mailto:${EMAIL}?subject=Demande%20de%20devis%20-%20La%20Fran
 const FORM_ACTION = "https://api.web3forms.com/submit";
 const WEB3FORMS_ACCESS_KEY = "03dd7b28-8a9f-4b91-af2a-7d064c23a69b";
 const ADDRESS = "Rue Armel Marsy, Sainghin-en-Mélantois";
+function Button({ children, className = "", variant = "default", size = "default", ...props }) {
+  const base = "inline-flex items-center justify-center font-semibold transition disabled:cursor-not-allowed disabled:opacity-70";
+  const sizes = size === "lg" ? "min-h-12 px-6 py-3 text-base" : "px-4 py-2 text-sm";
+  const variants =
+    variant === "outline"
+      ? "border border-white/20 bg-transparent text-white hover:bg-white/10"
+      : "bg-[#DC2626] text-white hover:bg-[#B91C1C]";
 
+  return (
+    <button className={`${base} ${sizes} ${variants} ${className}`} {...props}>
+      {children}
+    </button>
+  );
+}
+
+function Card({ children, className = "" }) {
+  return <div className={className}>{children}</div>;
+}
+
+function CardContent({ children, className = "" }) {
+  return <div className={className}>{children}</div>;
+}
 const projects = [
   {
     title: "Porte d’entrée aluminium",
