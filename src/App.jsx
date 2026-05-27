@@ -10,9 +10,9 @@ import {
   Phone,
   MapPin,
   Mail,
- Building2,
-PanelTop,
-Warehouse,
+Home,
+DoorOpen,
+BadgeCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
