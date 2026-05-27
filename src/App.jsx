@@ -468,3 +468,4 @@ export default function LandingPage() {
     </main>
   );
 }
+createRoot(document.getElementById("root")).render(<LandingPage />);
