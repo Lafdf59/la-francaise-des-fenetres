@@ -14,9 +14,6 @@ Home,
 DoorOpen,
 BadgeCheck,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-
 const PHONE = "03 20 41 31 43";
 const MOBILE = "06 77 32 93 03";
 const PHONE_LINK = "tel:+33320413143";
